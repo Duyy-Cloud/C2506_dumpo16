@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+  <button class="logout" id="logoutBtn">Logout</button>
+
+
+  <div class="section">
+    <h2>User Management</h2>
+    <form id="userForm">
+      <input type="hidden" id="editUserIndex">
+      <input type="text" id="userName" placeholder="Full Name" required>
+      <input type="email" id="userEmail" placeholder="Email" required>
+      <select id="userRole">
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+      </select>
+      <button type="submit" class="save">Save User</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr><th>Name</th><th>Email</th><th>Role</th><th>Actions</th></tr>
+      </thead>
+      <tbody id="userTable"></tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Product Management</h2>
+    <form id="productForm">
+      <input type="hidden" id="editProductIndex">
+      <input type="text" id="productName" placeholder="Product Name" required>
+      <input type="number" id="productPrice" placeholder="Price" required>
+      <input type="text" id="productDesc" placeholder="Description">
+      <input type="text" id="productImage" placeholder="Image URL">
+      <button type="submit" class="save">Save Product</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr><th>Name</th><th>Price</th><th>Description</th><th>Image</th><th>Actions</th></tr>
+      </thead>
+      <tbody id="productTable"></tbody>
+    </table>
+  </div>
+
+</body>
+</html>
+

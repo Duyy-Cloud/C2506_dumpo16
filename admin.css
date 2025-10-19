@@ -1,0 +1,54 @@
+body {
+    font-family: Arial;
+    background: #f9f9f9;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+  }
+  button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+  }
+  .logout {
+    float: right;
+    background: #e74c3c;
+  }
+  .logout:hover {
+    background: #c0392b;
+  }
+  .section {
+    background: rgb(250, 251, 250);
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  th, td {
+    border: 1px solid #0d0d0d;
+    padding: 10px;
+    text-align: center;
+  }
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+  box-sizing: border-box;
+  }
+  .save {
+    background: #2ecc71;
+  }
+  .delete {
+    background: #f51111;
+  }
+  .edit {
+    background: #3498db;
+  }
